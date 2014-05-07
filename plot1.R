@@ -31,7 +31,7 @@ df$datetime<-strptime(paste(as.character(df$Date),as.character(df$Time)), "%d/%m
 
 ### Plot graph
 
-png("plot1.png",width = 480, height = 480, units = "px",bg = "transparent")
+png("plot1.png",width = 480, height = 480, units = "px")  
 
 hist(df$Global_active_power,col="red",main="Global Active Power",xlab="Global Active Power (kilowatts)")
 

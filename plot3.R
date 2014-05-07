@@ -35,7 +35,7 @@ Sys.setlocale("LC_TIME", "English")
 
 ### Plot graph
 
-png("plot3.png",width = 480, height = 480, units = "px",bg = "transparent")
+png("plot3.png",width = 480, height = 480, units = "px") 
 
 plot(df$datetime,df$Sub_metering_1,type="l",xlab="",ylab="Energy sub metering")
 lines(df$datetime, df$Sub_metering_2, col = "red")
